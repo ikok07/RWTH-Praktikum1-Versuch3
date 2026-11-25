@@ -10,10 +10,10 @@
 #define CONFIG_H_
 
 /** Definiert die Anzahl der Spalten des Spielfelds */
-static const int WIDTH = 4;
+static const int WIDTH = 8;
 
 /** Definiert die Anzahl der Zeilen des Spielfelds */
-static const int HEIGHT = 4;
+static const int HEIGHT = 8;
 
 /** Definiert, ob die Tests ausgefuehrt werden. 1 ja, 0 nein */
 static const int TEST = 0;

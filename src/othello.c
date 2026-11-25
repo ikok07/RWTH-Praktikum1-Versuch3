@@ -371,10 +371,10 @@ void play(const int playerType[2]) {
   //
   // Hier erfolgt jetzt Ihre Implementierung ...
 
-  while (!blockedPlayers[0] && !blockedPlayers[1]) {
-    bool playerBlocked = blockedPlayers[currentPlayer - 1];
-    if (!playerBlocked &&
-        !getPlayerFn(playerType[currentPlayer - 1])(board, currentPlayer)) {
+  while (!blockedPlayers[0] || !blockedPlayers[1]) {
+    // bool playerBlocked = blockedPlayers[currentPlayer - 1];
+    // if (!playerBlocked &&
+    if (!getPlayerFn(playerType[currentPlayer - 1])(board, currentPlayer)) {
       blockedPlayers[currentPlayer - 1] = 1;
     };
     currentPlayer = 3 - currentPlayer;
